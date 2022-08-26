@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+<table border="1" style="width: 100%;">
+  <tr>
+    <p class="container-fluid"><button (click)="gotoCart('cart')"><span class="material-symbols-outlined">Cart</span></button>{{cartcount}}</p>
+    
+  </tr>
+  
+  <table border="1" style="width: 100%;">
+  <tr>
+    <td></td>
+    <td><app-homepage (countEvent) = "recievedNumber($event)"></app-homepage></td>
+    
+   
+  </tr>
+  </table>
+</table>

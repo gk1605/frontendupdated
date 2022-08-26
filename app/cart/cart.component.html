@@ -1,0 +1,31 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<div class="container-fluid"><h1>Your Cart</h1></div>
+<p>{{num}} added products</p>
+<table class="table">
+   
+    <tr *ngFor="let x of vegetable">
+        <table class = "table">
+            <td><img src="/assets/{{x.picture}}"  width="100" height="100"></td>
+        <th>{{x.vegetableName}}</th>
+        <tr><b>vegetableType:</b>{{x.vegetableType}}</tr>
+        <tr><b>Amount:</b> {{x.vegetableAmount|currency:'INR'}}</tr>      
+        <tr><b>Discount Coupon Applied:</b> {{x.discount.discountCoupon}}</tr>
+        <tr><b>Discount Percentage:</b>{{x.discount.discountPercentage}}% {{x.discount.discountType}}</tr>
+        <tr><b>Offered Price: {{(x.vegetableAmount-x.discount.discountPercentage/100*x.vegetableAmount)|currency:'INR'}}</b></tr> 
+        <tr>{{(x.vegetableAmount-x.discount.discountPercentage/100*x.vegetableAmount)|currency:'INR'}};</tr>
+        <tr><b>Rating:</b>{{x.Rating}}Stars</tr>
+        <tr><b>Feedback:</b>{{x.Feedback}}</tr>
+        <tr><button>Place Order</button></tr>
+        <tr>
+        </table>
+      
+       
+        
+        <hr>
+    </tr>
+</table>
+<table>
+    <p class="gk"><button (click)="back()">Back</button></p>
+  
+
+</table>

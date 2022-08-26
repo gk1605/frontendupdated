@@ -1,0 +1,8 @@
+.container-fluid{
+    color:antiquewhite;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+   
+    
+}

@@ -1,0 +1,111 @@
+container-fluid{
+    color:antiquewhite;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   
+    
+}
+h2{
+    margin-top: 1%;
+    font-size: larger;
+    color:red;
+    font-size: xxxx-large
+    ;
+}
+h1{
+  margin-top: 1%;
+  font-size: larger;
+  color:navy;
+  font-size: xx-large;
+  background-color: white;
+  text-align: center;
+}
+.h5
+{
+  text-align: end;
+}
+.ok
+{
+  text-align: end;
+  background-color: white;
+}
+.logo img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 80%;
+  text-align: center;
+  box-shadow: 0px 0px 3px #5f5f5f,
+      0px 0px 0px 5px #ecf0f3,
+      8px 8px 15px #a7aaa7,
+      -8px -8px 15px #fff;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+ 
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position:fixed;
+  bottom: 45%;
+  right: 45%;
+  border: 3px solid #f1f1f1;
+  z-index: 1;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color:lightpink;
+  color: yellow;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: navy;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
